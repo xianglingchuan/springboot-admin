@@ -63,7 +63,7 @@ CREATE TABLE `sys_log` (
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET utf8mb4 COMMENT='系统日志';
 
 -- 初始数据
-INSERT INTO `sys_user` (`id`, `username`, `password`, `email`, `mobile`, `status`, `create_time`) VALUES ('1', 'admin', 'e1153123d7d180ceeb820d577ff119876678732a68eef4e6ffc0b1f06a01f91b', 'root@demo.io', '13612345678', '1', '2016-11-11 11:11:11');
+INSERT INTO `sys_user` (`id`, `username`, `password`, `email`, `mobile`, `status`, `create_time`) VALUES ('1', 'admin', '$2a$10$LaS.zXChV3BQrPqIA1avWe24.tG9Oj9/JnK37W9bRfWzj65fRN0Nq', 'root@demo.io', '13612345678', '1', '2016-11-11 11:11:11');
 INSERT INTO `sys_menu` (`id`, `pid`, `name`, `url`, `perms`, `type`, `icon`, `order_num`) VALUES ('1', '0', '系统管理', NULL, NULL, '0', 'fa fa-cog', '0');
 INSERT INTO `sys_menu` (`id`, `pid`, `name`, `url`, `perms`, `type`, `icon`, `order_num`) VALUES ('2', '1', '管理员管理', 'modules/sys/user.html', NULL, '1', 'fa fa-user', '1');
 INSERT INTO `sys_menu` (`id`, `pid`, `name`, `url`, `perms`, `type`, `icon`, `order_num`) VALUES ('3', '1', '角色管理', 'modules/sys/role.html', NULL, '1', 'fa fa-user-secret', '2');
