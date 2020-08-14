@@ -7,9 +7,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.168.150:3306/springboot_admin?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false
-    username: root
-    password: root
+    url: jdbc:mysql://192.168.3.161:3306/ximalayaos_study?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: naliworld
+    password: password!
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
